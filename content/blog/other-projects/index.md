@@ -1,6 +1,7 @@
 ---
 title: Other Projects
 summary: 
+date: 2024-06-10
 authors:
   - admin
 tags:

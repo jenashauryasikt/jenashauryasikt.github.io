@@ -12,12 +12,12 @@ sections:
         padding: ['1rem', '1rem', '1rem', '1rem']
       biography:
         style: 'text-align: justify; font-size: 0.8em;'
-  - block: collection
-    content:
-      filters:
-        folders:
-          - blog
-    design:
-      spacing:
-        padding: ['3rem', '1rem', '3rem', '1rem']
+  # - block: collection
+  #   content:
+  #     filters:
+  #       folders:
+  #         - blog
+  #   design:
+  #     spacing:
+  #       padding: ['3rem', '1rem', '3rem', '1rem']
 ---
