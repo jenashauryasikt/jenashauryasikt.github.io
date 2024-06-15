@@ -9,7 +9,7 @@ A concise collection of my relevant academic courses throughout my undergraduate
 
 {{< toc mobile_only=true is_open=true >}}
 
-### University of Southern California (USC)
+### 🎓 University of Southern California (USC)
 
 I graduated with an MS in Computer Engineering, concentrating on Machine Learning.
 
@@ -26,7 +26,7 @@ I graduated with an MS in Computer Engineering, concentrating on Machine Learnin
 6. **EE-510 Linear Algebra for Engineering**
 7. **EE-450 Introduction to Computer Networks**
 
-### Indian Institute of Technology (IIT) Delhi
+### 🎓 Indian Institute of Technology (IIT) Delhi
 
 I graduated with a Bachelor of Technology in Electrical Engineering, with a specialization minor degree in Cognitive and Intelligent Systems.
 
