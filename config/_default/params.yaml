@@ -37,7 +37,7 @@ header:
 footer:
   copyright:
     # notice: '© {year} {author}. This work is licensed under {license}'
-    notice: '© {year} {author}'
+    notice: '© {year} {admin}'
     license:
       enable: true
       allow_derivatives: false
