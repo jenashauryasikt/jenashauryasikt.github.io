@@ -8,6 +8,9 @@ main:
   - name: Topics
     url: tags/
     weight: 20
+  - name: Education
+    url: education/
+    weight: 30
   - name: Uses
     url: uses/
-    weight: 30
+    weight: 40
