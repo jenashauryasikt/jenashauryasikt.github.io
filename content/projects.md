@@ -1,18 +1,34 @@
 ---
-title: Education
+title: Projects
 date: 2024-06-10
+authors:
+  - admin
 hide_date: true
-reading_time: false
+reading_time: true
 
 type: landing
 sections:
   - block: resume-biography
     content:
+      # The user's folder name in content/authors/
+      username: admin
+    design:
+      spacing:
+        padding: ['1rem', '1rem', '1rem', '1rem']
+      biography:
+        style: 'text-align: justify; font-size: 0.8em;'
+  - block: collection
+    content:
       filters:
         folders:
-          - blog/my-education
+          - blog
+    design:
+      spacing:
+        padding: ['3rem', '1rem', '3rem', '1rem']
+  - block: resume-biography
+    content:
       # The user's folder name in content/authors/
-    #   username: admin
+      username: admin
     design:
       spacing:
         padding: ['1rem', '1rem', '1rem', '1rem']
@@ -20,7 +36,7 @@ sections:
         style: 'text-align: justify; font-size: 0.8em;'
 ---
 
-<!-- A concise collection of my relevant academic courses throughout my undergraduate and masters.
+A concise collection of my relevant academic courses throughout my undergraduate and masters.
 
 {{< toc mobile_only=true is_open=true >}}
 
@@ -52,4 +68,4 @@ I graduated with a Bachelor of Technology in Electrical Engineering, with a spec
 5. **ELL-715 Digital Image Processing**
 6. **ELL-457 Optimization for Machine Learning**
 7. **ELL-409 Machine Intelligence and Learning**
-8. **COL-106 Data Structures and Algorithms** -->
+8. **COL-106 Data Structures and Algorithms**
