@@ -17,6 +17,3 @@ sections:
       spacing:
         padding: ['3rem', '1rem', '3rem', '1rem']
 ---
-
-
-{{< toc mobile_only=true is_open=true >}}
