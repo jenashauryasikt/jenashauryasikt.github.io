@@ -9,7 +9,7 @@ My journey in academia and the tech industry so far.
 
 {{< toc mobile_only=true is_open=true >}}
 
-### Applied Research Intern
+<h3> Applied Research Intern </h3>
 **<span style="color: #ADD8E6;">Big Vision LLC</span>**<br>
 <span style="color: #ADD8E6;">May 2023 - Aug 2023 · San Diego, California</span><br>
 
