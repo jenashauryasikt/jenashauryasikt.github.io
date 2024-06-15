@@ -37,7 +37,7 @@ header:
 footer:
   copyright:
     # notice: '© {year} {author}. This work is licensed under {license}'
-    notice: '© {year} {admin}'
+    notice: '© {year} Shauryasikt Jena'
     license:
       enable: true
       allow_derivatives: false
