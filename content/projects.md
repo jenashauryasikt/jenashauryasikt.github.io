@@ -3,20 +3,11 @@ title: Projects
 date: 2024-06-10
 authors:
   - admin
-hide_date: true
+hide_date: false
 reading_time: true
 
 type: landing
 sections:
-  - block: resume-biography
-    content:
-      # The user's folder name in content/authors/
-      username: admin
-    design:
-      spacing:
-        padding: ['1rem', '1rem', '1rem', '1rem']
-      biography:
-        style: 'text-align: justify; font-size: 0.8em;'
   - block: collection
     content:
       filters:
@@ -25,15 +16,6 @@ sections:
     design:
       spacing:
         padding: ['3rem', '1rem', '3rem', '1rem']
-  - block: resume-biography
-    content:
-      # The user's folder name in content/authors/
-      username: admin
-    design:
-      spacing:
-        padding: ['1rem', '1rem', '1rem', '1rem']
-      biography:
-        style: 'text-align: justify; font-size: 0.8em;'
 ---
 
 A concise collection of my relevant academic courses throughout my undergraduate and masters.
