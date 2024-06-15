@@ -3,21 +3,6 @@ title: Education
 date: 2024-06-10
 hide_date: true
 reading_time: false
-
-type: landing
-sections:
-  - block: resume-biography
-    content:
-      filters:
-        folders:
-          - blog/my-education
-      # The user's folder name in content/authors/
-    #   username: admin
-    design:
-      spacing:
-        padding: ['1rem', '1rem', '1rem', '1rem']
-      biography:
-        style: 'text-align: justify; font-size: 0.8em;'
 ---
 
 A concise collection of my relevant academic courses throughout my undergraduate and masters.
