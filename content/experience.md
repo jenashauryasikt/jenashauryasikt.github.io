@@ -5,13 +5,13 @@ hide_date: true
 reading_time: false
 ---
 
-My journey in academia and the tech industry so far
+My journey in academia and the tech industry so far.
 
 {{< toc mobile_only=true is_open=true >}}
 
 ### Applied Research Intern
-**<span style="color: #ADD8E6;">Big Vision LLC</span>**
-May 2023 - Aug 2023 $\hspace{0.2em} \cdot \hspace{0.2em}$ San Diego, California
+**<span style="color: #ADD8E6;">Big Vision LLC</span>**<br>
+May 2023 - Aug 2023 &middot San Diego, California
 
 My project was to deliver a robust OCR tool to sports coaching agency to digitize statistics and strategies for their record-keeping. I was supervised by the VP of Technology, Mr. Pranav Mishra, and reported to the COO.
 
@@ -23,8 +23,8 @@ Tasks
 - Developed an annotation tool to correct bounding boxes and/or labellings after the initial run of an OCR over the dataset to improve quality of the dataset labels.
 
 ### Research Intern
-**<span style="color: #ADD8E6;">Clemson University</span>**
-May 2021 - Jan 2022 $\hspace{0.2em} \cdot \hspace{0.2em}$ Clemson, South Carolina (Remote)
+**<span style="color: #ADD8E6;">Clemson University</span>**<br>
+May 2021 - Jan 2022 &middot Clemson, South Carolina (Remote)
 
 This role allowed me to pursue interdisciplinary research for Environmental Sciences and Computer Science to estimate soil moisture at various depths and high resolutions. It helped me realize my aim to develop ML models for sustainable practices. I was supervised by Professor Ashok Mishra. 
 
@@ -35,8 +35,8 @@ Tasks
 - This project helped several collaborating meteorological agencies who provided the initial datasets at much farther spatial resolutions. It reduced the cost of installation for area-wise denser/more soil moisture sensors.
 
 ### Quantitative Research Intern
-**<span style="color: #ADD8E6;">Torch Investment Group</span>**
-Jun 2021 - Oct 2021 $\hspace{0.2em} \cdot \hspace{0.2em}$ Singapore (Remote)
+**<span style="color: #ADD8E6;">Torch Investment Group</span>**<br>
+Jun 2021 - Oct 2021 &middot Singapore (Remote)
 
 My experience in this internship helped me learn the maths for financial analysis and utilizing ML models to understand better investment or trading strategies.
 
@@ -44,8 +44,8 @@ My experience in this internship helped me learn the maths for financial analysi
 - Formulated a CAGR(Compound Annual Growth Rate)-based investment algorithm focusing on the intrinsic value of stocks. This metric of undervalued/overvalued stocks yielded over a 10% increase in annual returns across an investment portfolio of 30 stocks
 
 ### Machine Learning Intern
-**<span style="color: #ADD8E6;">Tech Mahindra</span>**
-May 2020 - Jul 2020 $\hspace{0.2em} \cdot \hspace{0.2em}$ Pune, India
+**<span style="color: #ADD8E6;">Tech Mahindra</span>**<br>
+May 2020 - Jul 2020 &middot Pune, India
 
 I got the opportunity to work at Tech Mahindra's esteemed innovation cell, the Makers Lab. This project allowed minimal staffing at offices during COVID lockdowns to allow for smooth running of systems.
 
