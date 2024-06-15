@@ -5,9 +5,6 @@ date: 2024-06-10
 
 hide_date: true
 reading_time: false
-
-authors:
-    - admin
 ---
 
 A concise collection of my relevant academic courses throughout my undergraduate and masters.
