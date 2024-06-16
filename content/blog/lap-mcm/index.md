@@ -28,7 +28,7 @@ LapMCM is an advanced semi-supervised learning technique that minimizes the Vapn
 
 ![img 1](images/1.png "Fig. 1 Performance of LapMCM on artifical 2D datasets")
 
-The optimization problem for LapMCM aims to minimize the classifier's complexity by solving the following objective function {{< cite page="https://arxiv.org/pdf/1408.2803" view="citation" >}}:
+The optimization problem for LapMCM aims to minimize the classifier's complexity by solving the following objective function [(Jayadeva, 2015)](https://arxiv.org/pdf/1408.2803):
 
 {{< math >}}
 $$
@@ -48,7 +48,7 @@ LapMCM minimizes the VC dimension and the VC dimension in a case of spherized da
 2. Train with a pair of labelled samples and all other as unlabelled samples
 3. Select features with non-zero weights
 
-LapMCM tends to select fewer features than ReliefF, FCBF CITE JAY 16 and still gives better performance measures which verifies the application of feature selection using unlabelled data.
+LapMCM tends to select fewer features than ReliefF, FCBF [(Jayadeva, 2016)](https://www.sciencedirect.com/science/article/abs/pii/S092523121500939X) and still gives better performance measures which verifies the application of feature selection using unlabelled data.
 
 |              Datasets           |         |         Features        |         |         |        |     Accuracies    |         |         |
 |:-------------------------------:|:------:|:---:|:-------:|:----:|:------:|:---:|:-------:|:----:|
@@ -63,7 +63,7 @@ Table 1: LapMCM based feature selection. Accuracies from training and testing us
 
 ### Trend Filtering
 
-Graph Trend Filtering (GTF) is a technique for smooth signal estimation on graphs. It extends traditional trend filtering to graph-structured data, offering advantages in terms of local adaptivity and computational efficiency.
+Graph Trend Filtering (GTF) [(Wang, 2016)](https://jmlr.org/papers/volume17/15-147/15-147.pdf) is a technique for smooth signal estimation on graphs. It extends traditional trend filtering to graph-structured data, offering advantages in terms of local adaptivity and computational efficiency.
 
 Inspired by this, we came up with Trend Filtered MCM with the optimization problem:
 
