@@ -45,6 +45,8 @@ The dataset is divided into an 80:20 ratio for training and validation.
 
 #### Baseline
 
+![img 1](images/1.png "Fig. 1 Baseline model pipeline for feature engineering and ensemble learning")
+
 The baseline model uses an ensemble of 8 GBDT models based on LightGBM, optimized with random search and Bayesian algorithms. Despite testing more models, the final meta-model averages these 8 models, achieving an accuracy of 62.5%.
 
 #### Experiments
