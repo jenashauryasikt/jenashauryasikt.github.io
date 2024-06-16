@@ -71,4 +71,4 @@ Reinforcement Learning offers a robust framework for enhancing the strategies in
 - **Graph Neural Networks** to model game states more accurately.
 - **Asynchronous Actor-Critic Models** for more stable learning.
 
-The project report can be found [here](static/uploads/RL_ScotlandYard.pdf)
+The project report can be found [here](RL_ScotlandYard.pdf)
