@@ -16,23 +16,23 @@ AILA in collaboration with Twelve Labs hosted a Multimodal AI hackathon on June 
 
 Our team comprised of [Aditya Vadalkar](https://www.linkedin.com/in/aditya-vadalkar/), [Hritik Agrawal](https://www.linkedin.com/in/hritik-agrawal-6945b3248/), [Shubham Maheshwari](https://www.linkedin.com/in/shubham-m27/), [Soham Bhokare](https://www.linkedin.com/in/sohambhokare/), and [myself](https://www.linkedin.com/in/shauryasikt/).
 
-### Introduction
+### 1. Introduction
 
 In the age of digital media, sports press conferences generate a vast amount of content that needs to be processed, summarized, and highlighted efficiently. This poses a challenge in video processing and retrieval.
 
-### Initial Experiments
+### 2. Initial Experiments
 
 My team experimented with several video processing APIs. However, in this field of reporting where speed is of the essence, video processing took a long time. It took about more than twice the duration of the original video for its indexing and processing of embeddings.
 
-#### Strategy
+#### 2.1 Strategy
 
 We strategized that a press conference can be perceived as a conversation between the individual panelists and all the interviewers who can be collectively treated as one interviewer. This is helpful as in such a case, the conversation in the form of audio or transcript is enough as an information source to index important data. Video processing is superfluous in this use case, and hence was discarded for the most part.
 
-### Methodology
+### 3. Methodology
 
 The URL to the YouTube video is first input to the chatbot. The entire video editing pipeline to extract relevant clips to the prompt was modeled by our team as follows:
 
-#### 1. Audio Transcription
+#### 3.1 Audio Transcription
 
 We stripped the audio from the downloaded YouTube video. Then the conversation was transcribed using AWS Transcribe which has speaker diarization enabled to identify what lines were spoken by which individual. The transcript was designed to be a json file with the following attributes for each line spoken:
 
@@ -43,13 +43,13 @@ We stripped the audio from the downloaded YouTube video. Then the conversation w
 
 Consecutive entries with the same speaker ID were concatenated to improve coherence.
 
-#### 2. Speaker Identification
+#### 3.2 Speaker Identification
 
 First, we evaluated the Z-score of all the individuals' speaking durations from the preliminary transcript. Individuals above an empirically determined Z-score threshold were deemed as panelists.
 
 As a robust strategy to handle conferences with multiple speakers, we used AWS Rekognition to identify speaker names from randomly sampled video frames of each panel speaker determined. Then the panelists were attributed their names in the transcript and all other speakers were attributed as one interviewer.
 
-#### 3. Retrieval Augmented Generation (RAG)
+#### 3.3 Retrieval Augmented Generation (RAG)
 
 In the processed transcript, alternating interviewer and panel speaker entries were paired to introduce Question-Answer pairing information before being indexed by the vectorstore. This is essential to retain the context of the panelist's answer from the interviewer's question. The vectorstore and the user prompt are sent to the RAG engine.
 
@@ -57,19 +57,19 @@ Then 2 different RAG branches with their unique conversational memories were cre
 
 Finally, a sanity checker RAG engine is implemented to weed out any transcipt segments unrelated to the user prompt. It also provides a concise text summary for the final transcript.
 
-#### 4. Clipping and Compilation
+#### 3.4 Clipping and Compilation
 
 The retrieved transcript segments from RAG can be used to find the start and end timestamps of the clips required from the original video. These clips are then compiled together in chronological order.
 
-#### 5. Feedback
+#### 3.5 Feedback
 
 The compiled short video of the relevant clips is output to the user. If unhappy, the user can give a feedback to the chatbot and it will loop to the RAG step with this new prompt. Thanks to the memory of the conversation, a suitably edited clip is output again until the user is satisfied.
 
-#### 6. User Interface (UI)
+#### 3.6 User Interface (UI)
 
 The UI, designed using Flask due to Python compatibility, resembles a chatbot that initially takes the YouTube URL and then subsequently interacts via user queries regarding the video segments required.
 
-### Demo
+### 4. Demo
 
 1. Demo for objective queries can be found [here](https://www.youtube.com/).
 2. Demo for subjective queries can be found [here](https://www.youtube.com/).

@@ -14,28 +14,28 @@ Reinforcement Learning techniques like Deep Q-Networks and Monte Carlo Tree Sear
 
 {{< toc mobile_only=true is_open=true >}}
 
-### Introduction to Scotland Yard and Reinforcement Learning
+### 1. Introduction to Scotland Yard and Reinforcement Learning
 
 Scotland Yard is a classic board game of strategy and deduction, where a group of detectives chase a secretive criminal, Mr. X, across a map of Old England. Using different modes of transportation, players must outsmart each other in this game of hide-and-seek. With the integration of Reinforcement Learning (RL) methods such as Deep Q-Networks (DQN) and Monte Carlo Tree Search (MCTS), we can significantly enhance the gameplay, particularly the strategies employed by Mr. X.
 
-#### Game Rules
+#### 1.1 Game Rules
 
-##### Setup
+##### 1.1.1 Setup
 - Scotland Yard involves 2-5 detectives and one criminal, Mr. X.
 - Players use taxis, buses, and the underground to move across 200 nodes on the map.
 - Detectives win by landing on Mr. X’s location, while Mr. X wins by evading capture for 20 turns.
 
-##### Information Asymmetry
+##### 1.1.2 Information Asymmetry
 - Mr. X’s location is hidden except at specific intervals.
 - Detectives know the transportation modes used by Mr. X but not his exact location.
 
-#### Game Design Challenges
+#### 1.2 Game Design Challenges
 - Asymmetry: The game is biased against Mr. X due to the limited turns and collective detective strategy.
 - Partial Observability: Detectives operate with incomplete information, making standard RL algorithms less effective without modifications.
 
-### Reinforcement Learning in Gameplay
+### 2. Reinforcement Learning in Gameplay
 
-#### Methodology
+#### 2.1 Methodology
 
 The two main policy optimization techniques used are Deep Q-Networks and Monte Carlo Tree Search. Feature vectors are engineered to include the locations of detectives, the modes of transport used by all players, and the nodes on the map to be used as data.
 
@@ -43,25 +43,25 @@ The two main policy optimization techniques used are Deep Q-Networks and Monte C
 
 **Strategy:** Integrating DQN with MCTS combines the strengths of deep learning and tree search, optimizing decision-making processes.
 
-#### Results
+#### 2.2 Results
 
-##### Baseline
+##### 2.2.1 Baseline
 
 Initial simulations with <mark>random</mark> moves set a baseline win rate for Mr. X at around <mark>9-10%</mark>.
 
-##### Deep Q-Networks
+##### 2.2.2 Deep Q-Networks
 
 Mr. X’s win rate increased to approximately <mark>50%</mark> after extensive training against <mark>random detective moves</mark>.
 
-##### Monte Carlo Tree Search
+##### 2.2.3 Monte Carlo Tree Search
 
 MCTS-based strategies yielded a maximum win rate of over <mark>60%</mark> for Mr. X, highlighting its effectiveness in complex decision-making environments.
 
-##### Combined Approach
+##### 2.2.4 Combined Approach
 
 The hybrid DQN + MCTS model showed promising results set to surpass just MCTS but required extensive training iterations to reach its full potential with smart detective agents trained adversarially.
 
-#### Conclusion
+### Conclusion
 
 Reinforcement Learning offers a robust framework for enhancing the strategies in Scotland Yard. By leveraging DQN and MCTS, we can develop intelligent agents capable of outperforming traditional human strategies. However, the computational demands and the need for extensive training iterations present challenges that need to be addressed in future work.
 

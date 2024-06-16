@@ -14,15 +14,15 @@ image:
 
 Among advanced ML techniques, graph-based optimization, feature selection, and learning play crucial roles in enhancing model performance. My undergraduate capstone project/thesis explores these concepts, focusing on methods such as Laplacian Minimal Complexity Machines (LapMCM) and Trend Filtering.
 
-### Introduction
+### 1. Introduction
 
 Incorporating intrinsic geometric information of data into learning models can significantly improve their accuracy and generalization. By leveraging both labeled and unlabeled data, we can design more robust classifiers. This motivation leads us to explore manifold regularization and graph-based optimization techniques.
 
-### Manifold Regularization
+### 2. Manifold Regularization
 
 Manifold regularization integrates intrinsic geometric structures into the learning process. The conventional learning framework is augmented with a manifold-based intrinsic norm, enhancing the model's ability to generalize from limited labeled data by utilizing the underlying data manifold.
 
-### Laplacian Minimal Complexity Machines (LapMCM)
+### 3. Laplacian Minimal Complexity Machines (LapMCM)
 
 LapMCM is an advanced semi-supervised learning technique that minimizes the Vapnik-Chervonenkis (VC) dimension, leading to a geometrically informed classifier. It incorporates both labeled and unlabeled data to optimize the decision boundary, reducing model complexity while maintaining high accuracy.
 
@@ -41,7 +41,7 @@ Upon simplification, this implies an unconstrained optimization problem that can
 ![img 2](images/3.png "Fig. 2 Performance of LapMCM for Australian Dataset with 40% labeled samples")
 ![img 3](images/4.png "Fig. 3 No. of support vectors vs datapoints - LapSVM & LapMCM - Australian")
 
-#### LapMCM Feature Selection through Unlabeled Data
+#### 3.1 LapMCM Feature Selection through Unlabeled Data
 
 LapMCM minimizes the VC dimension and the VC dimension in a case of spherized data is determined by the number of features, thus LapMCM minimizes features or does feature selection. The steps for feature selection are:
 1. Train a linear LapMCM on data with large number of features and small number of samples
@@ -61,7 +61,7 @@ LapMCM tends to select fewer features than ReliefF, FCBF [(Jayadeva, 2016)](http
 
 Table 1: LapMCM based feature selection. Accuracies from training and testing using SVM.
 
-### Trend Filtering
+### 4. Trend Filtering
 
 Graph Trend Filtering (GTF) [(Wang, 2016)](https://jmlr.org/papers/volume17/15-147/15-147.pdf) is a technique for smooth signal estimation on graphs. It extends traditional trend filtering to graph-structured data, offering advantages in terms of local adaptivity and computational efficiency.
 
@@ -82,13 +82,13 @@ TFMCM is advantageous over LapMCM:
 
 ![img 4](images/2.png "Fig. 4 Performance of TFMCM on artifical 2D datasets")
 
-#### Function Approximation by TFMCM
+#### 4.1 Function Approximation by TFMCM
 
 TFMCMs apply trend filtering principles to function approximation tasks, providing a robust framework for regression problems. This approach leverages the power of unlabeled data to improve model performance on complex manifolds.
 
 ![img 5](images/5.png "Fig. 5 Results of TFMCM regressor on sine curve")
 
-#### Super-Resolution using TFMCM
+#### 4.2 Super-Resolution using TFMCM
 
 We first take the original low-resolution image with original 3D manifold shown in the 2nd part. We use the image pixels along with unlabelled intermediate pixels to learn a manifold which is shown as a scatter plot in the 3rd part of the image. This learned manifold is further used to predict intermediate pixel intensities and to resolve the image.
 
@@ -106,7 +106,7 @@ For colored images each of the R, B and the G channels were super-resolved paral
 
 ![img 9](images/9.png "Fig. 9 Super-resolution using TFMCM on colored images")
 
-### Future Work
+### 5. Future Work
 
 1. Large scale extension of TFMCM: Develop an iterative solution for the TFMCM optimization problem, in the primal form.
 2. Exhaustive exploration of the unlabelled samples based feature selection, as an individual research problem.

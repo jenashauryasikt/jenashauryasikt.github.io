@@ -12,11 +12,11 @@ image:
 
 {{< toc mobile_only=true is_open=true >}}
 
-### Introduction
+### 1. Introduction
 
 Data-to-text generation transforms structured data into natural language. This is essential for applications like conversational agents, where verbalizing intricate information from databases is necessary. However, achieving high performance in data-to-text generation can be challenging, especially in low-resource settings with limited labelled data-text pairs. A novel approach called cycle training, which leverages pre-trained models like T5, addresses these challenges effectively.
 
-### Cycle Training
+### 2. Cycle Training
 
 ![img 1](images/1.png "Fig. 1 Schematic of cycle training")
 
@@ -27,7 +27,7 @@ Cycle training [(Wang, 2023)](https://aclanthology.org/2023.acl-long.160.pdf) in
 
 Cycle training is particularly useful in low-resource settings where annotated data is scarce. By initializing with a small amount of supervised data and then training unsupervised over the entire dataset, it achieves performance comparable to fully supervised methods.
 
-### Methodology
+### 3. Methodology
 
 The approach is tested on 5 datasets - WebNLG, E2E, WTQ, WSQL, and XAlign. T5-base, a pre-trained text-to-text transformer with 12 layers and 220M parameters, is used for both data-to-text and text-to-data tasks as the backbone model.
 
@@ -35,7 +35,7 @@ Training setup:
 - AdamW optimizer, learning rate of 3e-4, batch size of 32, max input length of 256.
 - Models are trained up to 50 epochs with early stopping after 5 epochs without improvement.
 
-### Results
+### 4. Results
 
 The cycle training method shows impressive results across various datasets, achieving performance nearly identical to fully supervised models. Notably, the T5 model demonstrated exceptional performance, validating the effectiveness of cycle training in data-to-text generation tasks. ROUGE, METEOR, BLEU, BertScore, and PARENT scores were used as performance metrics.
 
