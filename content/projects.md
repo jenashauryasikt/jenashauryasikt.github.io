@@ -16,4 +16,12 @@ sections:
     design:
       spacing:
         padding: ['3rem', '1rem', '3rem', '1rem']
+  - block: collection
+    content:
+      filters:
+        folders:
+          - blog2
+    design:
+      spacing:
+        padding: ['3rem', '1rem', '3rem', '1rem']
 ---
