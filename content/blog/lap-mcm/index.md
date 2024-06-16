@@ -92,4 +92,4 @@ FIG 6.7
 
 The thesis presentation slide deck can be found [here](link).
 
-The thesis dissertation report can be found here.
+The thesis dissertation report can be found [here](link).
