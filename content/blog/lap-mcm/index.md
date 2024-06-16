@@ -28,7 +28,7 @@ LapMCM is an advanced semi-supervised learning technique that minimizes the Vapn
 
 ![img 1](images/1.png "Fig. 1 Performance of LapMCM on artifical 2D datasets")
 
-The optimization problem for LapMCM aims to minimize the classifier's complexity by solving the following objective function CITE JAY 15:
+The optimization problem for LapMCM aims to minimize the classifier's complexity by solving the following objective function {{< cite page="https://arxiv.org/pdf/1408.2803" view="citation" >}}:
 
 {{< math >}}
 $$
@@ -48,7 +48,7 @@ LapMCM minimizes the VC dimension and the VC dimension in a case of spherized da
 2. Train with a pair of labelled samples and all other as unlabelled samples
 3. Select features with non-zero weights
 
-LapMCM tends to select fewer features than ReliefF, FCBF and still gives better performance measures which verifies the application of feature selection using unlabelled data.
+LapMCM tends to select fewer features than ReliefF, FCBF CITE JAY 16 and still gives better performance measures which verifies the application of feature selection using unlabelled data.
 
 |              Datasets           |         |         Features        |         |         |        |     Accuracies    |         |         |
 |:-------------------------------:|:------:|:---:|:-------:|:----:|:------:|:---:|:-------:|:----:|
