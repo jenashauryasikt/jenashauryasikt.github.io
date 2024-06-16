@@ -50,7 +50,16 @@ LapMCM minimizes the VC dimension and the VC dimension in a case of spherized da
 
 LapMCM tends to select fewer features than ReliefF, FCBF and still gives better performance measures which verifies the application of feature selection using unlabelled data.
 
-Feature Selection Table
+|              Datasets           |         |         Features        |         |         |        |     Accuracies    |         |         |
+|:-------------------------------:|:------:|:---:|:-------:|:----:|:------:|:---:|:-------:|:----:|
+| **(samples X dimensions)** | **LapMCM** | **MCM** | **ReliefF** | **FCBF** | **LapMCM** | **MCM** | **ReliefF** | **FCBF** |
+| Alon (62 × 2000)                |   25   |  41 |   896   | 1984 |  87%   | 83.8% | 82.2% | 82.1% |
+| Shipp (77 × 7129)               |   35   |  51 |  3196   | 7129 |  97%   | 96.1% | 93.5% | 93.5% |
+| Golub (72 × 7129)               |   67   |  47 |  2271   | 7129 |  96%   | 95.8% | 90.3% | 95.8% |
+| Singh (102 × 12600)             |   66   |  81 |  5650   | 11619 |  91%   | 91.2% | 89.2% | 92.5% |
+| Christensen (198 × 1413)        |  198   |  98 |   633   | 1413 |  99%   | 99.5% | 99.5% | 99.5% |
+
+Table 1: LapMCM based feature selection. Accuracies from training and testing using SVM.
 
 ### Trend Filtering
 
