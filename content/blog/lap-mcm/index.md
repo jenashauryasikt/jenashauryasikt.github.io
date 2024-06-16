@@ -71,26 +71,32 @@ TFMCM is advantageous over LapMCM:
 2. Local adaptivity
 3. Complex extensions
 
-TFMCM Vs LapMCM Vs LapSVM
+![img 4](images/2.png "Fig. 4 Performance of TFMCM on artifical 2D datasets")
 
 #### Function Approximation by TFMCM
 
 TFMCMs apply trend filtering principles to function approximation tasks, providing a robust framework for regression problems. This approach leverages the power of unlabeled data to improve model performance on complex manifolds.
 
-SINE CURVE
+![img 5](images/5.png "Fig. 5 Results of TFMCM regressor on sine curve")
 
 #### Super-Resolution using TFMCM
 
 We first take the original low-resolution image with original 3D manifold shown in the 2nd part. We use the image pixels along with unlabelled intermediate pixels to learn a manifold which is shown as a scatter plot in the 3rd part of the image. This learned manifold is further used to predict intermediate pixel intensities and to resolve the image.
 
-FIG 6.2
+![img 6](images/6.png "Fig. 6 Process of TFMCM super-resolution")
 
-FIG 6.4
+Our algorithm even gives better resolved generalizations as compared to methods like bilinear interpolation. Interpolation methods result into more diffused images while our algorithm gives more sharper results as illustrated.
 
-FIG 6.6
+![img 7](images/7.png "Fig. 7 Comparison with Bilinear interpolation")
 
-FIG 6.7
+We also used the algorithm on a 48 by 48 image and resolved it 5 times to a 240 by 240 image. Due to high computational costs, the images were super-resolved in parts of size 8 by 8. The image was divided into distinct frames of size 8 by 8 and each frame was parallely super-resolved to the size of 40 by 40. The resulting image too gives a better generalization and enhances features of the original image.
 
-The thesis presentation slide deck can be found [here](link).
+![img 8](images/8.png "Fig. 8 Super-resolution using TFMCM on 48x48 image")
 
-The thesis dissertation report can be found [here](link).
+For colored images each of the R, B and the G channels were super-resolved parallely and were then cascaded and normalized (to avoid overflow), to create the output.
+
+![img 9](images/9.png "Fig. 9 Super-resolution using TFMCM on colored images")
+
+The thesis presentation slide deck can be found [here](BTP_Presentation.pdf).
+
+The thesis dissertation report can be found [here](BTP.pdf).
