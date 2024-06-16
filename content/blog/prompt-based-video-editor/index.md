@@ -12,7 +12,9 @@ image:
 
 {{< toc mobile_only=true is_open=true >}}
 
-AILA in collaboration with Twelve Labs hosted a Multimodal AI hackathon. One problem statement was to develop a prompt-based video editor to aid sports journalists in extracting topical clips from any one long sports press conference video on YouTube. My team finished 3rd overall amongst initially 20+ teams, and then 15 teams who completed the challenge to the standard of a demo. The tool is our team's IP and is currently unavailable until released as a product.
+AILA in collaboration with Twelve Labs hosted a Multimodal AI hackathon on June 9-10, 2024. One problem statement was to develop a prompt-based video editor to aid sports journalists in extracting topical clips from any one long sports press conference video on YouTube. My team finished 3rd overall amongst initially 20+ teams, and then 15 teams who completed the challenge to the standard of a demo. The tool is our team's IP and is currently unavailable until released as a product.
+
+Our team comprised of [Aditya Vadalkar](https://www.linkedin.com/in/aditya-vadalkar/), [Hritik Agrawal](https://www.linkedin.com/in/hritik-agrawal-6945b3248/), [Shubham Maheshwari](https://www.linkedin.com/in/shubham-m27/), [Soham Bhokare](https://www.linkedin.com/in/sohambhokare/), and [myself](https://www.linkedin.com/in/shauryasikt/).
 
 ### Introduction
 
