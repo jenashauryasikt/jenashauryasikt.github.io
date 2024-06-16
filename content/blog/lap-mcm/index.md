@@ -106,6 +106,11 @@ For colored images each of the R, B and the G channels were super-resolved paral
 
 ![img 9](images/9.png "Fig. 9 Super-resolution using TFMCM on colored images")
 
+### Future Work
+
+1. Large scale extension of TFMCM: Develop an iterative solution for the TFMCM optimization problem, in the primal form.
+2. Exhaustive exploration of the unlabelled samples based feature selection, as an individual research problem.
+
 The thesis presentation slide deck can be found [here](BTP_Presentation.pdf).
 
 The thesis dissertation report can be found [here](BTP.pdf).

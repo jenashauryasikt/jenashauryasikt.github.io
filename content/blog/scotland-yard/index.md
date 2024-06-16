@@ -65,7 +65,7 @@ The hybrid DQN + MCTS model showed promising results set to surpass just MCTS bu
 
 Reinforcement Learning offers a robust framework for enhancing the strategies in Scotland Yard. By leveraging DQN and MCTS, we can develop intelligent agents capable of outperforming traditional human strategies. However, the computational demands and the need for extensive training iterations present challenges that need to be addressed in future work.
 
-### Current Developments
+### Future Developments
 
 - **Enhanced Computational Resources**, ensuring sufficient computational power to train models to their optimal performance levels.
 - **Graph Neural Networks** to model game states more accurately.
