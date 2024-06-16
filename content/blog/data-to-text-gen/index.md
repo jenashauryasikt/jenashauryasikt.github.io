@@ -18,7 +18,9 @@ Data-to-text generation transforms structured data into natural language. This i
 
 ### Cycle Training
 
-Cycle training involves two cycles: Data-Text-Data (DTD) and Text-Data-Text (TDT). These cycles ensure consistency between the input data and the generated text. Here's how it works:
+![img 1](images/1.png "Fig. 1 Schematic of cycle training")
+
+Cycle training [(Wang, 2023)](https://aclanthology.org/2023.acl-long.160.pdf) involves two cycles: Data-Text-Data (DTD) and Text-Data-Text (TDT). These cycles ensure consistency between the input data and the generated text. Here's how it works:
 
 1. Data-Text-Data (DTD): Converts data to text and back to data, ensuring that the initial data and the reconstructed data are consistent.
 2. Text-Data-Text (TDT): Converts text to data and back to text, ensuring that the initial text and the reconstructed text are consistent.
