@@ -47,7 +47,7 @@ The two main policy optimization techniques used are Deep Q-Networks and Monte C
 
 ##### Baseline
 
-**Random Moves:** Initial simulations with <mark>random</mark> moves set a baseline win rate for Mr. X at around <mark>9-10%</mark>.
+Initial simulations with <mark>random</mark> moves set a baseline win rate for Mr. X at around <mark>9-10%</mark>.
 
 ##### Deep Q-Networks
 
@@ -71,4 +71,4 @@ Reinforcement Learning offers a robust framework for enhancing the strategies in
 - **Graph Neural Networks** to model game states more accurately.
 - **Asynchronous Actor-Critic Models** for more stable learning.
 
-The project report can be found [here](uploads/RL_ScotlandYard.pdf)
+The project report can be found [here](static/uploads/RL_ScotlandYard.pdf)
