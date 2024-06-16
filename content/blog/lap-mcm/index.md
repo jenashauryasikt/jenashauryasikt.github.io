@@ -26,7 +26,7 @@ Manifold regularization integrates intrinsic geometric structures into the learn
 
 LapMCM is an advanced semi-supervised learning technique that minimizes the Vapnik-Chervonenkis (VC) dimension, leading to a geometrically informed classifier. It incorporates both labeled and unlabeled data to optimize the decision boundary, reducing model complexity while maintaining high accuracy.
 
-IMAGE OF SIMPLE 2D DATASETS
+![img 1](images/1.png "Fig. 1 Performance of LapMCM on artifical 2D datasets")
 
 The optimization problem for LapMCM aims to minimize the classifier's complexity by solving the following objective function CITE JAY 15:
 
@@ -38,7 +38,8 @@ $$
 
 Upon simplification, this implies an unconstrained optimization problem that can be solved iteratively using Newton's Method. Experiments demonstrate that LapMCM performs better than traditional methods like Support Vector Machines (SVMs) in various scenarios, especially with a limited number of labeled samples. It achieves higher accuracy with fewer support vectors, illustrating its efficiency.
 
-TWO AUSTRALIAN IMAGES
+![img 2](images/3.png "Fig. 2 Performance of LapMCM for Australian Dataset with 40% labeled samples")
+![img 3](images/4.png "Fig. 3 No. of support vectors vs datapoints - LapSVM & LapMCM - Australian")
 
 #### LapMCM Feature Selection through Unlabeled Data
 
