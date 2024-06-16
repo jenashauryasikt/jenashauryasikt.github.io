@@ -65,7 +65,7 @@ Table 1: LapMCM based feature selection. Accuracies from training and testing us
 
 Graph Trend Filtering (GTF) [(Wang, 2016)](https://jmlr.org/papers/volume17/15-147/15-147.pdf) is a technique for smooth signal estimation on graphs. It extends traditional trend filtering to graph-structured data, offering advantages in terms of local adaptivity and computational efficiency.
 
-Inspired by this, we came up with Trend Filtered MCM with the optimization problem:
+Inspired by this, we came up with Trend Filtered MCM with the optimization problem (variable notations can be found in the [(Wang, 2016)](https://jmlr.org/papers/volume17/15-147/15-147.pdf)):
 
 {{< math >}}
 $$
