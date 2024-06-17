@@ -14,7 +14,7 @@ image:
 
 AILA in collaboration with Twelve Labs hosted a Multimodal AI hackathon on June 9-10, 2024. One problem statement was to develop a prompt-based video editor to aid sports journalists in extracting topical clips from any one long sports press conference video on YouTube. My team finished 3rd overall amongst initially 20+ teams, and then 15 teams who completed the challenge to the standard of a demo. The tool is our team's IP and is currently unavailable until released as a product.
 
-Our team comprised of [Aditya Vadalkar](https://www.linkedin.com/in/aditya-vadalkar/), [Hritik Agrawal](https://www.linkedin.com/in/hritik-agrawal-6945b3248/), [Shubham Maheshwari](https://www.linkedin.com/in/shubham-m27/), [Soham Bhokare](https://www.linkedin.com/in/sohambhokare/), and [myself](https://www.linkedin.com/in/shauryasikt/).
+Our team SamurAI comprised of [Aditya Vadalkar](https://www.linkedin.com/in/aditya-vadalkar/), [Hritik Agrawal](https://www.linkedin.com/in/hritik-agrawal-6945b3248/), [Shubham Maheshwari](https://www.linkedin.com/in/shubham-m27/), [Soham Bhokare](https://www.linkedin.com/in/sohambhokare/), and [myself](https://www.linkedin.com/in/shauryasikt/).
 
 ### 1. Introduction
 
@@ -67,12 +67,12 @@ The compiled short video of the relevant clips is output to the user. If unhappy
 
 #### 3.6 User Interface (UI)
 
-The UI, designed using Flask due to Python compatibility, resembles a chatbot that initially takes the YouTube URL and then subsequently interacts via user queries regarding the video segments required.
+The UI, designed using Flask due to Python compatibility, resembles a chatbot that initially takes the YouTube URL and then subsequently interacts via user queries regarding the video segments required. The edited videos presented as the output can be downloaded to the device, and can be shared across various social media platforms.
 
 ### 4. Demo
 
-1. Demo for objective queries can be found [here](https://www.youtube.com/).
-2. Demo for subjective queries can be found [here](https://www.youtube.com/).
+1. Demo for objective queries can be found [here](https://www.youtube.com/watch?v=U55HvnsqQlc).
+2. Demo for subjective queries can be found [here](https://www.youtube.com/watch?v=FfwutHKoMHo).
 
 ### Conclusion
 
