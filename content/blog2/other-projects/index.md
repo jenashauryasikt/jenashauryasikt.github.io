@@ -13,7 +13,7 @@ image:
 {{< toc mobile_only=true is_open=true >}}
 
 ### [1. Unsupervised Generative ML Models](https://github.com/jenashauryasikt/Unsupervised-Generative-ML-Models)
-- Conducted comprehensive evaluation of 4 unsupervised generative models
+- Conducted comprehensive evaluation of 4 unsupervised generative models in JAX
   - Energy Based Models (EBM)
   - Denoising Score Matching (DSM)
   - Denoising Diffusion Probabilistic Model (DDPM)
