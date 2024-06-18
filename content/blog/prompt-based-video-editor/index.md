@@ -12,7 +12,7 @@ image:
 
 {{< toc mobile_only=true is_open=true >}}
 
-AILA in collaboration with Twelve Labs hosted a Multimodal AI hackathon on June 9-10, 2024. One problem statement was to develop a prompt-based video editor to aid sports journalists in extracting topical clips from any one long sports press conference video on YouTube. My team finished 3rd overall amongst initially 20+ teams, and then 15 teams who completed the challenge to the standard of a demo. The tool is our team's IP and is currently unavailable until released as a product.
+AILA in collaboration with Twelve Labs hosted a Multimodal AI hackathon on June 9-10, 2024. The problem statement, chosen as my team's focus, was to develop a prompt-based video editor to aid sports journalists in extracting topical clips from any one long sports press conference video on YouTube. My team finished 3rd overall amongst initially 20+ teams, and then 15 teams who completed the challenge to the standard of a demo. The tool is our team's IP and is currently unavailable until released as a product.
 
 Our team SamurAI comprised of [Aditya Vadalkar](https://www.linkedin.com/in/aditya-vadalkar/), [Hritik Agrawal](https://www.linkedin.com/in/hritik-agrawal-6945b3248/), [Shubham Maheshwari](https://www.linkedin.com/in/shubham-m27/), [Soham Bhokare](https://www.linkedin.com/in/sohambhokare/), and [myself](https://www.linkedin.com/in/shauryasikt/).
 
@@ -55,7 +55,7 @@ In the processed transcript, alternating interviewer and panel speaker entries w
 
 Then 2 different RAG branches with their unique conversational memories were created - one for objective query prompts and one for subjective. Objective query prompts are focused on some person or incident and relevant lines can be easily retrieved as QA pairs. Subjective prompts follow a theme like highlights, memorable moments, quotes etc. Subjectively relevant lines can be retrieved through extensive prompt engineering of the LLM, by virtue of the internal chunking of the vectorstore. The LLM used in this project is GPT-4o.
 
-Finally, a sanity checker RAG engine is implemented to weed out any transcipt segments unrelated to the user prompt. It also provides a concise text summary for the final transcript.
+Finally, an LLM sanity checker engine is implemented to weed out any transcipt segments unrelated to the user prompt. It also provides a concise text summary for the final transcript.
 
 #### 3.4 Clipping and Compilation
 
@@ -76,7 +76,7 @@ The UI, designed using Flask due to Python compatibility, resembles a chatbot th
 
 ### Conclusion
 
-We built an industry-standard fast and accurate prompt-based video editor for sports conferences by focusing on the audio as the primary source of information. The fact worth notice is that our tool was the fastest in the competition as it takes about 10% of the initial video's duration for processing as opposed to the state-of-the-art video processor used by everyone that takes about 2.5 times the intial video's duration for processing. This speed would give sports journalists an edge in getting their material quicker than competitors in a fast-paced competitive market. 
+We built an industry-standard fast and accurate prompt-based video editor for sports conferences by focusing on the audio as the primary source of information. The fact worth notice is that our tool was the fastest in the competition as it takes about 15% of the initial video's duration for processing as opposed to the state-of-the-art video processor used by everyone that takes about 2 times the intial video's duration for processing. This speed would give sports journalists an edge in getting their material quicker than competitors in a fast-paced competitive market. 
 
 #### Limitations
 1. Chat history is implemented with basic functionality in RAG.
